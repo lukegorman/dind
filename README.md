@@ -79,7 +79,7 @@ Run Docker-in-Docker and expose the inside Docker to the outside world:
 docker run --privileged -d -p 4444 -e PORT=4444 dind
 ```
 
-Note: when started with the `PORT` environment variable, the image will just
+Note: when started with the `PORT` environment variable, the image will just run
 the Docker daemon and expose it over said port. When started *without* the
 `PORT` environment variable, the image will run the Docker daemon in the
 background and execute a shell for you to play.
